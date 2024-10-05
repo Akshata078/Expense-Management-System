@@ -1,7 +1,7 @@
 [project]
 name = "expensemanager"
 authors = [
-    { name = "Akshata", email = "akshata23@navgurukul.org"}
+    { name = "AKshata", email = "akshata23@navgurukul.org"}
 ]
 description = "manage employee expenses"
 requires-python = ">=3.10"

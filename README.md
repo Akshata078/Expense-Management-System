@@ -1,4 +1,4 @@
-## ExpenseManager
+## Expensemanager
 
 manage employee expenses
 

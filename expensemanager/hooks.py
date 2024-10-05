@@ -1,6 +1,6 @@
 app_name = "expensemanager"
-app_title = "ExpenseManager"
-app_publisher = "Akshata"
+app_title = "Expensemanager"
+app_publisher = "AKshata"
 app_description = "manage employee expenses"
 app_email = "akshata23@navgurukul.org"
 app_license = "mit"
