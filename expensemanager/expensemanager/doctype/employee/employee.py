@@ -5,9 +5,9 @@
 from frappe.model.document import Document
 
 
-class ExpenseClaim(Document):
+class Employee(Document):
 	def before_save(self):
-		total_amt = 0
-		for amt in self.expense_type:
-			total_amt += amt.amount
-		self.total_amount = total_amt
+		if self.last_name:
+			self.full_name = f"{self.first_name} {self.last_name}"
+		else:
+			self.full_name = self.first_name

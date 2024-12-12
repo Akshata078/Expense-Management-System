@@ -1,38 +1,37 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:employee_name",
  "creation": "2024-10-05 12:01:36.797831",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "employee_name",
-  "expense_type",
   "date",
-  "amount",
-  "amended_from"
+  "amended_from",
+  "section_break_bfle",
+  "expense_type",
+  "section_break_nbne",
+  "total_amount"
  ],
  "fields": [
   {
    "fieldname": "employee_name",
-   "fieldtype": "Data",
-   "label": "Employee Name"
+   "fieldtype": "Link",
+   "label": "Employee Name",
+   "options": "Employee",
+   "unique": 1
   },
   {
    "fieldname": "expense_type",
-   "fieldtype": "Select",
+   "fieldtype": "Table",
    "label": "Expense Type",
-   "options": "Travel\nMeals\nEntertainment\nInternet\nHealth & Wellness"
+   "options": "Expense Type Child doctype"
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date"
-  },
-  {
-   "fieldname": "amount",
-   "fieldtype": "Int",
-   "label": "Amount",
-   "non_negative": 1
   },
   {
    "fieldname": "amended_from",
@@ -43,15 +42,29 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "section_break_bfle",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_nbne",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-10-05 14:06:30.101834",
+ "modified": "2024-10-08 16:43:39.795883",
  "modified_by": "Administrator",
  "module": "Expensemanager",
  "name": "Expense Claim",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
